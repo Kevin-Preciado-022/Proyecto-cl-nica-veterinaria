@@ -2,7 +2,7 @@ import sqlite3
 
 DB_NAME = "clinica_veterinaria.db"
 
-def crear_tablas():
+def tablas():
     try:
         conexion = sqlite3.connect(DB_NAME)
         cursor = conexion.cursor()
@@ -35,4 +35,4 @@ def crear_tablas():
         conexion.close()
 
 if __name__ == "__main__":
-    crear_tablas()
+    tablas()
